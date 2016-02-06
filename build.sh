@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 
-docker build -t socialorra/pinot:latest .
+docker build -t mardambey/docker-pinot-confluent-platform:latest .
 
