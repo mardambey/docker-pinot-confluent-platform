@@ -6,6 +6,13 @@ This image is currently intended for development use, not for production use.
 
 [![](https://badge.imagelayers.io/mardambey/docker-pinot-confluent-platform:latest.svg)](https://imagelayers.io/?images=mardambey/docker-pinot-confluent-platform:latest 'Get your own badge on imagelayers.io')
 
+Configuration
+-------------
+
+The following environment variables can be passed in:
+
+    ZK_ADDRESS=zk-host:zk-port
+
 Building Image
 ---------------
 
