@@ -1,5 +1,7 @@
 FROM frolvlad/alpine-oraclejdk8
 
+LABEL version="1.0"
+
 RUN apk --update add unzip wget bash git
 
 RUN mkdir -p /opt/maven && wget http://archive.apache.org/dist/maven/maven-3/3.3.3/binaries/apache-maven-3.3.3-bin.tar.gz -O /opt/maven/apache-maven-3.3.3-bin.tar.gz && cd /opt/maven && tar -xzvf /opt/maven/apache-maven-3.3.3-bin.tar.gz && rm /opt/maven/apache-maven-3.3.3-bin.tar.gz
