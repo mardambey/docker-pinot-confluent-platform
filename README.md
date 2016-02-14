@@ -13,6 +13,14 @@ The following environment variables can be passed in:
 
     ZK_ADDRESS=zk-host:zk-port
 
+Volumes
+-------
+
+The following volumes are available, and contain data and logs:
+- /pinot-controller
+- /pinot-server
+- /pinot-broker
+
 Building Image
 ---------------
 

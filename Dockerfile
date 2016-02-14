@@ -16,3 +16,4 @@ WORKDIR /opt/pinot-0.016-pkg
 
 ENTRYPOINT ["./pinot-start.sh"]
 
+VOLUME ["/pinot-server", "/pinot-broker", "/pinot-controller"]
