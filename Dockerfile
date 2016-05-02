@@ -1,6 +1,6 @@
 FROM frolvlad/alpine-oraclejdk8
 
-LABEL version="1.0"
+LABEL version="1.1"
 
 RUN apk --update add unzip wget bash git
 
@@ -11,6 +11,7 @@ RUN mkdir -p /sources/git && cd /sources/git && git clone https://github.com/mar
 EXPOSE 9000/tcp
 
 COPY scripts/pinot-start.sh /opt/pinot-0.016-pkg/
+COPY scripts/pinot-server-restart.sh /opt/pinot-0.016-pkg/
 
 WORKDIR /opt/pinot-0.016-pkg
 
